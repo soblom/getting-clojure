@@ -11,3 +11,5 @@ I used Atom with the following packages
 
 * [Ciebiada/clojure-indent](https://atom.io/packages/clojure-indent)
 * [jasongilman/proto-repl](https://atom.io/packages/proto-repl)
+
+Also, as a Leiningen plugin: [dakrone/lein-bikeshed](https://github.com/dakrone/lein-bikeshed) for linting

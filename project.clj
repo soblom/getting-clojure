@@ -8,4 +8,5 @@
     [proto-repl "0.3.1"]]
   :main ^:skip-aot blottsbooks.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}}
+  :plugins [[lein-bikeshed "0.5.2"]])

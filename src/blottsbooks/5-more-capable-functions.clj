@@ -1,3 +1,6 @@
+(ns blottsbooks.core
+  (:gen-class))
+
 (defn shipping-charge[preferred-customer order-amount]
   (if preferred-customer
     (do
@@ -51,7 +54,8 @@
       total
       (recur (rest books) (+ total (:copies-sold (first books)))))))
 
-(defn sum-copies-map "Using map here" [books] (apply + (map :copies-sold books)))
+(defn sum-copies-map "Using map here" [books]
+  (apply + (map :copies-sold books)))
 
 (defn sum-copies-recur-switched
   ([books] (sum-copies-recur-switched 0 books))
@@ -59,5 +63,3 @@
       (if (empty? books)
         total
       (recur (+ total (:copies-sold (first books))) (rest books)))))
-
-§

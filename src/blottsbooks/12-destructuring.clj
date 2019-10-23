@@ -1,3 +1,6 @@
+(ns blottsbooks.core
+  (:gen-class))
+
 (def artists [:monet :austen])
 
 (let [painter (first artists)

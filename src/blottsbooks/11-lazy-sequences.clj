@@ -1,4 +1,6 @@
 ;; Lazy Sequences
+(ns blottsbooks.core
+  (:gen-class))
 
 (def jack "All work and no play makes Jack a dull boy")
 
@@ -65,12 +67,12 @@
   (println "The chapter text is" c))
 
 
-  (println
-    (first repeated-jack) "\n"
-    (nth repeated-jack 10) "\n"
-    (take 10 repeated-jack) "\n"
-    (nth numbers 10) "\n"
-    (first numbers) "\n"
-    (take 20 (take 10000000 (iterate inc 1))) "\n"
-    (take 20 evens) "\n"
-  )
+(println
+  (first repeated-jack) "\n"
+  (nth repeated-jack 10) "\n"
+  (take 10 repeated-jack) "\n"
+  (nth numbers 10) "\n"
+  (first numbers) "\n"
+  (take 20 (take 10000000 (iterate inc 1))) "\n"
+  (take 20 evens) "\n"
+)
