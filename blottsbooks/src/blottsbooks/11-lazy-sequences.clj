@@ -61,7 +61,7 @@
 (def chapters
   (take 10
     (map slurp
-      (map #(str "./book-examples/lazy/chap" % ".txt") numbers))))
+      (map #(str "../book-examples/lazy/chap" % ".txt") numbers))))
 
 (doseq [c chapters]
   (println "The chapter text is" c))
@@ -74,5 +74,4 @@
   (nth numbers 10) "\n"
   (first numbers) "\n"
   (take 20 (take 10000000 (iterate inc 1))) "\n"
-  (take 20 evens) "\n"
-)
+  (take 20 evens) "\n")
